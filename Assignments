@@ -1,4 +1,4 @@
-# 1. Linear Regression - Housing Price Prediction
+# Linear Regression - Housing Price Prediction :-
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -20,7 +20,7 @@ prediction = model.predict(X_test)
 print("Housing Price Error:", mean_absolute_error(y_test, prediction))
 
 
-# 2. Logistic Regression - Titanic Survival Prediction
+# Logistic Regression - Titanic Survival Prediction :-
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
