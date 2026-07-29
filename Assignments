@@ -1,0 +1,47 @@
+# 1. Linear Regression - Housing Price Prediction
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error
+
+# Load housing dataset
+house = pd.read_csv("housing.csv")
+
+X = house.drop("price", axis=1)
+y = house["price"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+prediction = model.predict(X_test)
+print("Housing Price Error:", mean_absolute_error(y_test, prediction))
+
+
+# 2. Logistic Regression - Titanic Survival Prediction
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import accuracy_score
+
+# Load Titanic dataset
+titanic = pd.read_csv("Titanic-Dataset.csv")
+
+titanic["Age"].fillna(titanic["Age"].mean(), inplace=True)
+
+le = LabelEncoder()
+titanic["Sex"] = le.fit_transform(titanic["Sex"])
+
+X = titanic[["Pclass", "Sex", "Age", "Fare"]]
+y = titanic["Survived"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
+prediction = model.predict(X_test)
+
+print("Titanic Accuracy:", accuracy_score(y_test, prediction))
