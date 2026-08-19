@@ -4,7 +4,7 @@ A beginner-friendly Machine Learning project that predicts house prices using Li
 
 📌 **Project Overview :-**
 
-Predicts house prices based on the living area (GrLivArea) and sale price of the house.
+This project predicts house prices based on the living area (GrLivArea) and sale price of the house.
 
 🛠️ **Technologies Used :-**
 
