@@ -3,7 +3,8 @@
 A beginner-friendly Machine Learning project that predicts house prices using Linear Regression.
 
 📌 **Project Overview :-**
-Predicts house prices based on the living area of the house.
+
+Predicts house prices based on the living area (GrLivArea) and sale price of the house.
 
 🛠️ **Technologies Used :-**
 
@@ -29,4 +30,5 @@ Predicts house prices based on the living area of the house.
 * Actual vs Predicted Price graph.
 
 🎯 **Learning Outcome :-**
+
 Learned data preparation, Linear Regression, prediction, model evaluation, and data visualization.
