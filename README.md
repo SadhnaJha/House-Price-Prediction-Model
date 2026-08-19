@@ -31,4 +31,4 @@ This project predicts house prices based on the living area (GrLivArea) of the h
 
 🎯 **Learning Outcome :-**
 
-Learned data preparation, Linear Regression, prediction, model evaluation, and data visualization.
+This project helped me to learn data preparation, Linear Regression, prediction, model evaluation, and data visualization.
