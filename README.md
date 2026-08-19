@@ -21,7 +21,7 @@ This project predicts house prices based on the living area (GrLivArea) of the h
 3. Split data into training and testing sets.
 4. Train the Linear Regression model.
 5. Predict house prices.
-6. Evaluate using **R² Score**.
+6. Evaluate using R² Score.
 7. Visualize actual vs predicted prices.
 
 📊 **Output :-**
