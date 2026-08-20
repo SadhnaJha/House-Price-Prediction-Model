@@ -19,7 +19,6 @@ model.fit(X_train, y_train)
 prediction = model.predict(X_test)
 print("Housing Price Error:", mean_absolute_error(y_test, prediction))
 
-
 # Logistic Regression - Titanic Survival Prediction 
 
 from sklearn.linear_model import LogisticRegression
